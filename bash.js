@@ -6,6 +6,8 @@ process.stdout.write('prompt> ');
 
 process.stdin.on('data', (data) => {
   const cmd = data.toString().trim().split(' ');
+  process.stdout.write(`You typed: ${cmd} \n`);
+
   switch (cmd[0]) {
     case 'pwd':
       importedPwd.pwd(cmd[0]);

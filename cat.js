@@ -11,7 +11,6 @@ function cat(fileToCat) {
     } else {
       console.log(data.toString());
     }
-    process.stdout.write('You typed: cat ' + fileToCat);
     process.stdout.write('\nprompt> ');
   });
 }
